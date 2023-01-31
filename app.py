@@ -93,11 +93,11 @@ if user_menu=='Overview':
 if user_menu=='Overall Analysis':
     st.title("Team Summary")
     st.subheader("Ranked By Matches Played")
-    summary = summary.style.background_gradient(cmap="Blues")
+    #summary = summary.style.background_gradient(cmap="Blues")
     st.dataframe(summary)
 
     st.title("Venue Summary")
-    city_df = city_df.style.background_gradient(cmap="Blues")
+    #city_df = city_df.style.background_gradient(cmap="Blues")
     st.dataframe(city_df)
 
 
@@ -476,7 +476,7 @@ if user_menu=='Player Stats':
     data["Fours"] = data["Fours"].astype("int")
     data["Sixes"] = data["Sixes"].astype("int")
 
-    data = data.style.background_gradient(cmap="Blues")
+    #data = data.style.background_gradient(cmap="Blues")
     
     st.dataframe(data)
     
@@ -509,7 +509,7 @@ if user_menu=='Player Stats':
     data["Sixes"] = data["Sixes"].astype("int")
 
     data = data.rename(columns={"Bowling Team":"Team", "Batter Runs":"Runs"})
-    data = data.style.background_gradient(cmap="winter")
+    #data = data.style.background_gradient(cmap="winter")
     
     st.dataframe(data)
     
